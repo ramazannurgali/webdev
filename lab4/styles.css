@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #243642;
+  /* background-image: url('path_to_your_background_image.jpg'); Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background-color: #387478;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.dice {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.dice img {
+  width: 100px;
+  height: 100px;
+}
+
+#roll-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #E2F1E7;
+  color: #629584;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#roll-button:hover {
+  background-color: #560032;
+  transform: scale(1.2);
+}
+
+#result p {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .dice img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #roll-button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+}
